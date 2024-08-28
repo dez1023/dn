@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>GClient Launcher</title>
+  <link rel="icon" href="web/favicon.png" type="image/png">
+  <link rel="stylesheet" href="web/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+  <meta name="theme-color" content="#4caf50" />
+  <link rel="shortcut icon" href="web/favicon.png" sizes="192x192" type="image/png">
+</head>
+
+<body>
+  <div class="topbar">
+    <img class="logo" src="web/favicon.png">
+    <h1 class="title">GClient Launcher <small>for beta 1.3_01</small> <a href="/index_merged.html">test</a> </h1>
+  </div>
+  <div class="launchbar">
+    <span>Choose a texture pack:</span>
+    <select name="Pack" id="packs">
+      <option value="vanilla">Vanilla</option>
+      <option value="faithless">Faithless</option>
+      <option value="modern">Vanilla 1.14</option>
+    </select>
+    <button id="launch" class="launch" onclick="launch()">Launch</button>
+  </div>
+  <div class="inside">
+    <div class="desc">
+      <span>GClient will (maybe) have:</span>
+      <span> • Shift Clicking</span>
+      <span> • No Fog Option</span>
+      <span> • Fov Slider</span>
+      <span> • Fullbright</span>
+    </div>
+    <img class="screenshot" src="web/screenshot.png">
+  </div>
+  <script src="web/index.js"></script>
+  <script src="web/installer.js"></script>
+</body>
+
+</html>
