@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #404040;
+}
+
+img {
+  pointer-events: none;
+}
+
+select, .launch {
+  all: unset;
+  cursor: pointer;
+}
+
+span,h1,button,select, .launch {
+  font-family: Poppins;
+  margin: 5px;
+  padding: 5px;
+  color: white;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+small {
+  font-size: 20px;
+}
+
+.topbar, .launchbar, .sidebar, .desc {
+  background: #595959CC;
+  padding: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.topbar {
+  background: linear-gradient(0deg, hsla(0, 0%, 35%, 1) 70%, hsla(122, 39%, 49%, 1) 100%);
+}
+
+.desc {
+  position: absolute;
+  margin: 10px;
+  border: white solid 1px;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+.desc > span {
+  display: block;
+}
+
+.launchbar {
+  position: absolute;
+  width: calc(100% - 20px);
+  bottom: 0;
+  left: 0;
+}
+
+.logo {
+  width: auto;
+  height: 62px;
+}
+
+.title {
+  float: right;
+}
+
+.screenshot {
+  width: auto;
+  height: 100vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -10;
+}
+
+.launch {
+  position: fixed;
+  width: 300px;
+  height: 80px;
+  bottom: 20px;
+  right: 10px;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: white solid 1px;
+  background: #4caf50;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+  transition: 0.25s;
+}
+
+.launch:hover {
+  background: #71c174;
+  transform: scale(1.05);
+}
+
+.launch:active {
+  background: #367c39;
+  transform: scale(1);
+  transition: 0s;
+}
+
+select {
+  padding: 10px;
+  border: white solid 1px;
+  background: #595959;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+}
+
+@media screen and (max-width: 700px) {
+  .launch {
+    bottom: 100px;
+    left: 50%;
+    background: #4caf50CC;
+    transform: translate(-50%,0);
+    backdrop-filter: blur(5px);
+  }
+
+  .launch:hover {
+    background: #71c174;
+    transform: translate(-50%,0) scale(1.05);
+  }
+
+  .launch:active {
+    background: #367c39;
+    transform: translate(-50%,0) scale(1);
+    transition: 0s;
+  }
+}
+
+  @media screen and (max-width: 540px) {  
+    .logo {
+      display: none;
+    }
+
+    .title {
+      float: none;
+    }
+  }
