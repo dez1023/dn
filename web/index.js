@@ -1,4 +1,4 @@
-let a = "https://yort.rfs2iscool.repl.co/"
+let a = "https://dez1023.github.io/dn/"
 
 let packs = [
   ["vanilla", a + "packs/vanilla.epk"],
@@ -35,5 +35,5 @@ save();
 function launch() {
   currentpack = packs.find(p => p[0] == select.value)[1];
   localStorage.setItem("currentpack", currentpack);
-  window.location.href = "/play"
+  window.location.href = "/dn/play"
 }
